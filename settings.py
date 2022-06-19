@@ -14,6 +14,8 @@ FACE_PROTO = "weights/deploy.prototxt"
 # https://raw.githubusercontent.com/opencv/opencv_3rdparty/dnn_samples_face_detector_20180205_fp16/res10_300x300_ssd_iter_140000_fp16.caffemodel
 FACE_MODEL = "weights/res10_300x300_ssd_iter_140000_fp16.caffemodel"
 
+#Name of folder to hold the generated dataset/gendered images
 IMAGE_OUTPUT_FOLDER = "new_dataset_img"
 
+#Setting indicating whether or not to delete the files in the output dataset folder before generating new ones
 DELETE_OLD_BEFORE_EXECUTION = True
