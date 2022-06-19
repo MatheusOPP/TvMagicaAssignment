@@ -42,14 +42,17 @@ def predict_gender(input_path: str, face_net, gender_net):
         gender_preds = gender_net.forward()
         i = gender_preds[0].argmax()
         gender = GENDER_LIST[i]
-        #Add to list with face data
+        # Add to list with face data
         face_data.append({"image": face_img, "gender": gender})
     return face_data
 
+
 def generate_gendered_images(input_path: str, face_net, gender_net):
-    directory_setup();
+    directory_setup()
     for face in predict_gender(input_path, face_net, gender_net):
         cv2.imwrite(
-            "{}/{}/{}.png".format(IMAGE_OUTPUT_FOLDER, face["gender"], str(uuid.uuid4())),
+            "{}/{}/{}.png".format(
+                IMAGE_OUTPUT_FOLDER, face["gender"], str(uuid.uuid4())
+            ),
             face["image"],
         )
