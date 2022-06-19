@@ -1,11 +1,10 @@
 # Import Libraries
 import cv2
 import numpy as np
-from image import display_img, image_resize, get_optimal_font_scale
 from face_detection import get_faces
 from settings import *
 from directory_setup import directory_setup
-
+import uuid
 
 def predict_gender(input_path: str, face_net, gender_net):
     """Predict the gender of the faces showing in the image"""

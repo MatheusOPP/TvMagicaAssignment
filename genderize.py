@@ -3,8 +3,6 @@ import cv2
 import numpy as np
 from predict_gender import generate_gendered_images
 from settings import *
-import uuid
-from pathlib import Path
 
 # load face Caffe model
 face_net = cv2.dnn.readNetFromCaffe(FACE_PROTO, FACE_MODEL)
