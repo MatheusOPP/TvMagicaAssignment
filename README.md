@@ -29,3 +29,7 @@ Example:
 ```
 python facifier.py dataset_img/QgqFDU7RfxtFx1AL.png
 ```
+
+## Credits
+
+The algorithm used for face detection and classification was taken and slightly modified for this purposes from the tutorial present on this web page: https://www.thepythoncode.com/article/gender-detection-using-opencv-in-python.
