@@ -13,4 +13,4 @@ if __name__ == "__main__":
     # Parsing command line arguments entered by user
     import sys
 
-    generate_gendered_images(sys.argv[1], face_net, gender_net)
+    generate_gendered_images(sys.argv[1], face_net, gender_net, delete_old=DELETE_OLD_BEFORE_EXECUTION)

@@ -46,8 +46,8 @@ def predict_gender(input_path: str, face_net, gender_net):
     return face_data
 
 
-def generate_gendered_images(input_path: str, face_net, gender_net):
-    directory_setup()
+def generate_gendered_images(input_path: str, face_net, gender_net, delete_old=True):
+    directory_setup(delete_old)
     for face in predict_gender(input_path, face_net, gender_net):
         cv2.imwrite(
             "{}/{}/{}.png".format(

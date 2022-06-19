@@ -15,3 +15,5 @@ FACE_PROTO = "weights/deploy.prototxt"
 FACE_MODEL = "weights/res10_300x300_ssd_iter_140000_fp16.caffemodel"
 
 IMAGE_OUTPUT_FOLDER = "new_dataset_img"
+
+DELETE_OLD_BEFORE_EXECUTION = True
