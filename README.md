@@ -22,12 +22,12 @@ pip3 install opencv-contrib-python
 ```
 
 ## Running the Program
-Run genderize.py with the command `python facifier.py` and pass the path to the image from which you want to extract faces from as an argument.
+Run genderize.py with the command `python genderize.py` and pass the path to the image from which you want to extract faces from as an argument.
 
 
 Example:
 ```
-python facifier.py dataset_img/QgqFDU7RfxtFx1AL.png
+python genderize.py dataset_img/QgqFDU7RfxtFx1AL.png
 ```
 
 ## Credits
